@@ -29,7 +29,8 @@ Make sure you have the following dependencies installed:
 
 **Steps to Run Locally**
 
-``` pip install -re requirements.txt ```
+``` pip install -r requirements.txt ```
 
 **in your terminal**
+
 ```python manage.py runserver```
