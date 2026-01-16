@@ -29,8 +29,22 @@ Make sure you have the following dependencies installed:
 
 **Steps to Run Locally**
 
-``` pip install -r requirements.txt ```
+1. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-**in your terminal**
+2. **Create a `.env` file** in the root directory and add your configuration:
 
-```python manage.py runserver```
+   ```env
+   SECRET_KEY='your_django_secret_key'
+   DEBUG=True
+   WATSON_API_KEY='your_ibm_watson_api_key'
+   WATSON_URL='your_ibm_watson_url'
+   ```
+
+3. **Run the server**
+
+   ```bash
+   python manage.py runserver
+   ```

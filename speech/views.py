@@ -10,8 +10,8 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 # Create your views here.
 
 # WatsonX API setup
-WATSON_API_KEY = '<API>'
-WATSON_URL = '<URL>'
+WATSON_API_KEY = settings.WATSON_API_KEY
+WATSON_URL = settings.WATSON_URL
 
 authenticator = IAMAuthenticator(WATSON_API_KEY)
 speech_to_text = SpeechToTextV1(authenticator=authenticator)
